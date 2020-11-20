@@ -1,0 +1,25 @@
+
+ <% if(current!=='edit'){%>
+ 
+ 
+ <div class=" c-ml-2">
+   <p class="text-right c-mb-3 text-xs note">2 comments</p>
+  <%- include('assignment-card') %>
+  <div class="d-flex justify-content-between ">
+     <%- include('pagination-default') %>
+     <%- include('button',{primary:'Reply',secondary:'Mark as read'}) %>
+    </div>
+</div>
+<% } else{%>
+
+
+ <div class=" c-ml-2">
+   <p class=" text-right c-mb-3 text-xs note">2 comments</p>
+  <%- include('assignment-card') %>
+  <div class="d-flex justify-content-end ">
+     <%# include('pagination-default') %>
+     <%- include('button',{primary:'Reply',secondary:'Cancel'}) %>
+    </div>
+</div>
+
+<% } %>

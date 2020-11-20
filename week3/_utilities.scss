@@ -1,0 +1,83 @@
+// flex
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+// =======================================
+// text-align
+.text-center {
+  text-align: center;
+}
+// =======================================
+// typography
+.normal {
+  font-weight: normal;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+// =======================================
+// 間距
+// 64 40 80 60 24 20 16 40 48 32
+// 40 80 32 24
+// 32 8  16 20
+@for $i from 1 through 9 {
+  .mb-#{i} {
+    margin-bottom: ($i) * 8px;
+  }
+}
+@for $i from 1 through 9 {
+  .pt-#{$i} {
+    padding-top: ($i) * 8px;
+  }
+}
+@for $i from 1 through 11 {
+  .pb-#{$i} {
+    padding-bottom: ($i) * 8px;
+  }
+}
+// =======================================
+// breakpoint
+@mixin pad {
+  @media (max-width: $breakpoint-pad) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile-s) {
+    @content;
+  }
+}
+// =======================================
+// hide-text
+.hide-text {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}

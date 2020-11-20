@@ -1,0 +1,17 @@
+.modal-form-new,
+.modal-form-edit {
+  .form-group {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #cdddcd;
+  }
+  .form-group:last-child {
+    border: none;
+  }
+  .modal-footer {
+    border: none;
+  }
+
+  .form-check {
+    font-size: 16px;
+  }
+}

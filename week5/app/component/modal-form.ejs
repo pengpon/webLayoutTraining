@@ -1,0 +1,178 @@
+<div
+  class="modal fade modal-form-new"
+  id="newProfileModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="newProfileModalLabel"
+  aria-hidden="true"
+  >
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title bold text-xl" id="editProfileModalLabel">New Admin</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <h6 class="bold text-l">Account</h6>
+          <label for="inputName text-s">Name</label>
+          <input type="text" class="form-control " id="inputName" placeholder="Emir Wicks" />
+          <label for="inputEmail text-s">Email</label>
+          <input
+            type="mail"
+            class="form-control "
+            id="inputEmail"
+            aria-describedby="emailHelp"
+            placeholder="emir.wicks@mail.com"
+          />
+        </div>
+        <div class="form-group">
+          <h6 class="text-l bold">Verification</h6>
+          <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <i class="material-icons danger">warning</i>
+              <span class="bold text-m">unverified</span>
+            </div>       
+          </div>
+          <button type="button" class="btn btn-lg btn-block rounded-0 primary bg-none border-light bold text-m c-py-2">
+            Send Verification Mail
+          </button>
+        </div>
+        <div class="form-group">
+          <h6 class="bold text-l">Access Level</h6>
+          <select class="form-control form-control-lg">
+            <option selected>-Choose access level-</option>
+            <option>Admin</option>
+            <option>User</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h6 class="bold text-l">Custom Access</h6>
+          <div class="form-check form-control-lg">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+            <label class="form-check-label" for="defaultCheck1"> Lecture </label>
+          </div>
+          <div class="form-check form-control-lg">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+            <label class="form-check-label" for="defaultCheck2"> Coupon </label>
+          </div>
+          <div class="form-check form-control-lg">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+            <label class="form-check-label" for="defaultCheck2"> Message </label>
+          </div>
+          <div class="form-check form-control-lg">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+            <label class="form-check-label" for="defaultCheck2"> Setting </label>
+          </div>
+          <div class="form-check form-control-lg">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+            <label class="form-check-label" for="defaultCheck2"> Task menu </label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+      <button type="button" class="btn btn-primary">Add</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<div
+  class="modal fade modal-form-edit"
+  id="editProfileModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="editProfileModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editProfileModalLabel">Edit Amin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <h6 class="bold">Account</h6>
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control bg-light" id="inputName" placeholder="Emir Wicks" />
+            <label for="inputEmail">Email</label>
+            <input
+              type="mail"
+              class="form-control bg-light"
+              id="inputEmail"
+              aria-describedby="emailHelp"
+              placeholder="emir.wicks@mail.com"
+            />
+          </div>
+          <div class="form-group">
+            <h6 class="text-l bold">Verification</h6>
+            <div class="d-flex justify-content-between">
+              <div class="d-flex align-items-center">
+                <i class="material-icons primary">check_circle</i>
+                <span class="bold text-m">Verified</span>
+              </div>
+              <span class="text-s">2020/4/12</span>
+            </div>
+
+            <button type="button" class="btn btn-lg btn-block rounded-0 light bg-none border-light bold text-m c-py-2">
+              Send Verification Mail
+            </button>
+          </div>
+          <div class="form-group">
+            <h6 class="bold text-l">Access Level</h6>
+            <select class="form-control form-control-lg">
+              <option>Admin</option>
+              <option>User</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <h6 class="bold text-l">Custom Access</h6>
+            <div class="form-check form-control-lg">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+              <label class="form-check-label" for="defaultCheck1"> Lecture </label>
+            </div>
+            <div class="form-check form-control-lg">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+              <label class="form-check-label" for="defaultCheck2"> Coupon </label>
+            </div>
+            <div class="form-check form-control-lg">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+              <label class="form-check-label" for="defaultCheck2"> Message </label>
+            </div>
+            <div class="form-check form-control-lg">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+              <label class="form-check-label" for="defaultCheck2"> Setting </label>
+            </div>
+            <div class="form-check form-control-lg">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+              <label class="form-check-label" for="defaultCheck2"> Task menu </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <h6 class="bold text-l">Deactivate Account</h6>
+          <div class="d-flex align-items-center danger c-mb-2">
+            <i class="material-icons">warning</i> <span class="text-m">This cannot be undone!</span>
+          </div>
+            <button type="button" class="btn btn-primary btn-lg btn-block danger bg-none btn-outline-danger border-danger">Deactivate This Account</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+</div>

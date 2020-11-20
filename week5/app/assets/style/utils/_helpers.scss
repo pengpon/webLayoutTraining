@@ -1,0 +1,144 @@
+// custom間距
+$space: 4px;
+@for $i from 1 through 11 {
+  .c-mb-#{$i} {
+    margin-bottom: $space * $i;
+  }
+  .c-ml-#{$i} {
+    margin-left: $space * $i;
+  }
+  .c-pt-#{$i} {
+    padding-top: $space * $i;
+  }
+  .c-pb-#{$i} {
+    padding-bottom: $space * $i;
+  }
+  .c-pl-#{$i} {
+    padding-left: $space * $i;
+  }
+  .c-pr-#{$i} {
+    padding-right: $space * $i;
+  }
+  .c-px-#{$i} {
+    padding-left: $space * $i;
+    padding-right: $space * $i;
+  }
+  .c-py-#{$i} {
+    padding-top: $space * $i;
+    padding-bottom: $space * $i;
+  }
+}
+
+
+.text-block {
+  color: #2a8356;
+  background-color: #edf4ee;
+}
+
+// font style
+.bold {
+  font-weight: 700;
+}
+.regular {
+  font-weight: 400;
+}
+
+// 圓圖
+.img-circular {
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/andychen.jpeg');
+  background-size: cover;
+  border-radius: 50%;
+  background-position: center;
+}
+
+// 按鈕
+.btn-primary {
+  background-color: $bg-color-dark;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #357052;
+}
+.btn-secondary {
+  background-color: #fff;
+  color: $border-color-primary;
+}
+
+.btn-outline-danger {
+  color: #e3006e;
+}
+
+.btn-outline-danger:hover {
+  background-color: #e3006e;
+  color: #fff;
+}
+
+.btn-primary,
+.btn-secondary {
+  border-color: $border-color-primary;
+}
+
+// 字色
+.primary {
+  color: #2a8356;
+}
+.secondary {
+  color: #0000009a;
+}
+.dark {
+  color: #121212;
+}
+.light {
+  color: #cdddcd;
+}
+.danger {
+  color: #e3006e;
+}
+.note{
+  color: $note-color;
+}
+
+// 字級
+.text-xl {
+  font-size: 24px;
+}
+.text-l {
+  font-size: 20px;
+}
+.text-m {
+  font-size: 16px;
+}
+.text-s {
+  font-size: 14px;
+}
+.text-xs {
+  font-size: 12px;
+}
+
+// 背景色
+.bg-light {
+  background-color: #edf4ee !important;
+}
+.bg-dark {
+  background-color: #2a8356 !important;
+}
+.bg-none {
+  background-color: transparent;
+}
+
+// 框線
+.border-1{
+  border-width: 1px;
+  border-style: solid;
+}
+.border-light {
+  border-color: #cdddcd;
+}
+.border-dark {
+  border-color: #2a8356;
+}
+.border-danger {
+  border-color: #e3006e;
+}

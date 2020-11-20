@@ -1,0 +1,23 @@
+.list-group {
+  color: $text-color-primary;
+
+  .list-group-item {
+    padding: 12px;
+  }
+  .list-group-item:hover {
+    background-color: $bg-color-light;
+    color: inherit;
+    cursor: pointer;
+  }
+  .list-group-item p {
+    margin: 0;
+  }
+  .list-group-item.active {
+    background-color: #edf4ee;
+    border: 1px solid #cdddcd;
+    color: inherit;
+  }
+  .list-item {
+    font-size: 16px;
+  }
+}

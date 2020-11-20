@@ -1,0 +1,50 @@
+<div class="sidebar d-flex flex-column justify-content-between">
+  <nav class="sidebar-menu nav flex-column">
+    <h1 class="h1 c-mb-10 c-pl-8">
+      <a href="index.html" class="text-hide">Answer</a>
+    </h1>
+    <a href="404.html" class="nav-link d-flex align-items-center"> 
+      <i class="material-icons">insert_chart</i>
+      Dashboard
+    </a>
+    <a href="404.html" class="nav-link d-flex align-items-center"> 
+      <i class="material-icons">forum</i> 
+      Question
+    </a>
+    <a href="index.html" class="nav-link d-flex align-items-center" id="assignment"> 
+      <i class="material-icons">assignment</i> 
+      Assignment
+    </a>
+    <a href="404.html" class="nav-link d-flex align-items-center"> 
+      <i class="material-icons">video_library</i> 
+      Course
+    </a>
+    <a href="admin.html" class="nav-link d-flex align-items-center" id="admin"> 
+      <i class="material-icons">supervisor_account</i>
+      Admin
+    </a>
+    <a href="404.html" class="nav-link d-flex align-items-center"> 
+      <i class="material-icons">settings</i> 
+      Settings
+    </a>
+  </nav>
+
+ <div class="media currentUser">
+    <div  class="align-self-start mr-3 img-circular" alt="andychen"></div>
+    <div class="media-body">
+      <h5 class="mt-0 bold">Andy Chen</h5>
+      <p class="text-note">andy0401@mail.com</p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  let currentPath=window.location.pathname;
+ 
+  if(currentPath=='/admin.html'){
+    $('#admin').addClass('active');
+  }else{
+    $('#assignment').addClass('active');
+  }
+</script>

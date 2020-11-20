@@ -1,0 +1,24 @@
+<% let header={ 
+    'Assignment':{
+      title:'Assignment',
+      dropdown:'All Courses',
+      icon:'keyboard_arrow_down',
+    },
+    'Admin':{
+    title:'Admin',
+    button:'Add New Admin',
+    icon:'add',
+    }
+  }%>
+<header class="d-flex justify-content-between">
+  <% if (data==='Assignment') { %>
+    
+    <%- include('assignment-header',{'data':header[data]}); %>
+    <% } else if(data==='Admin'){ %>
+    <%- include('admin-header',{'data':header[data]}) %>
+  <% } %>
+  <div class="header-icon">
+    <i class="material-icons">search</i>
+    <i class="material-icons">notifications_active</i>
+  </div>
+</header>

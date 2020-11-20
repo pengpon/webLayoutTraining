@@ -1,0 +1,20 @@
+.admin-table {
+  tbody tr td:last-child i:last-child {
+    margin-left: 16px;
+  }
+  thead tr th:first-child i {
+    color: #2a8356;
+  }
+  thead th:first-child,
+  tbody tr {
+    cursor: pointer;
+  }
+
+  tr td i:hover{
+    color:#2a8356;
+  }
+
+  tbody tr:hover {
+    background-color: #edf4ee;
+  }
+}

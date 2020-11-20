@@ -1,0 +1,21 @@
+.btn {
+  padding: 8px 32px;
+}
+
+.btn-info {
+  padding: 4px 8px;
+  background-color: #edf4ee;
+  color: #121212;
+  border: none;
+}
+.btn-info:active:focus,
+.btn-info:focus,
+.btn-info.focus .btn-info:active,
+.btn-info:hover {
+  background-color: #c8cfc9;
+  border: none;
+  color: inherit;
+}
+.btn-collapse:focus{
+  border:none;
+}

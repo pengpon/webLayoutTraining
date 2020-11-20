@@ -1,0 +1,46 @@
+<div
+  class="modal fade admin-modal"
+  id="viewProfileModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="viewProfileModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">       
+    <div class="modal-body">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <div class="media">
+      <div class="mr-3 admin-profile-img" ></div>
+      <div class="media-body">
+        <p class="role">#1</p>
+        <p class="role">Admin</p>
+        <p class="name">Emir Wicks</p>
+        <p class="mail text-note">emir.wicks@mail.com</p>
+        <p class="">
+          <button
+            class="w-100 d-flex justify-content-between btn-collapse"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            <span class="btn-info">verified</span> 
+            <i class="material-icons primary icon-close" >keyboard_arrow_up</i>
+            <i class="material-icons primary icon-open">keyboard_arrow_down</i>
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <button type="button" class="btn btn-outline-danger">Deactivate</button>
+          <button type="button" class="btn btn-primary">Edit</button>
+        </div>
+      </div>
+    </div> 
+    </div>
+    </div>
+  </div>
+</div>
+

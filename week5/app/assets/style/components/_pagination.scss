@@ -1,0 +1,21 @@
+
+.pagination .page-item:first-child .page-link, 
+.pagination .page-item:last-child .page-link {
+  color: #2a8356;
+}
+.pagination .page-item .page-link  {
+  color: #121212;
+}
+.page-item.active .page-link {
+  background-color: #2a8356;
+  border:1px solid #2a8356;
+  color:#FFFFFF;
+}
+
+.page-item .page-link {
+  border:1px solid #2a8356;
+}
+.pagination li:last-child{
+  border-radius:2px 0 0 2px;
+
+}

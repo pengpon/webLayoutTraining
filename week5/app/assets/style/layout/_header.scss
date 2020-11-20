@@ -1,0 +1,24 @@
+header {
+  padding: 32px 0;
+  .h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .header-option {
+    margin-left: 46px;
+    .material-icons{
+      color: #2a8356;
+    }
+  }
+  // header 右上icon
+  .header-icon .material-icons {
+    margin-left: 26px;
+  }
+  .header-icon .material-icons:hover {
+    color:$text-color-secondary;
+  }
+}
+

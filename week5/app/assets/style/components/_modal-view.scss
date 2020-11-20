@@ -1,0 +1,26 @@
+.admin-profile-img{
+  width: 141px;
+  height: 141px;
+  background-image: url('../images/emir.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+[aria-expanded="false"] .icon-open {
+  display: block;
+}
+[aria-expanded="false"] .icon-close {
+  display: none;
+}
+[aria-expanded="true"] .icon-open {
+  display: none;
+}
+[aria-expanded="true"] .icon-close {
+  display: block;
+}
+
+.btn-collapse,.btn-collapse:focus,.btn-collapse:active{
+  border:none;
+  background-color: #fff;
+}

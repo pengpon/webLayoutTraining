@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@400;500&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Roboto','Noto Sans', sans-serif;
+  padding-top: 30px;
+}
+
+body img {
+  display: inline-block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto 48px;
+}
+
+.photo h1 {
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 94px;
+  padding: 17px 0;
+  border-bottom: 2px solid #000;
+}
+
+.photo img {
+  padding: 48px 0;
+}
+
+.profile h2, .edu h2, .work h2 {
+  color: #000;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #000;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.profile h2 span, .edu h2 span, .work h2 span {
+  color: #A00404;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.profile ul > li, .edu ul > li, .work ul > li {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  padding-bottom: 24px;
+}
+
+.skills {
+  background-color: #415165;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.skills .skills-inner {
+  padding-top: 24px;
+  padding-bottom: 36px;
+}
+
+.skills .skills-inner h2 {
+  color: #fff;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #fff;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.skills .skills-inner h2 span {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.skills .skills-inner h2 {
+  margin-bottom: 40px;
+}
+
+.skills .skills-inner ul {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+  border-left: 1px solid #96A9C4;
+  padding-left: 24px;
+}
+
+.skills .skills-inner ul > li {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  padding-bottom: 20px;
+}
+
+.skills .skills-inner ul > li:last-child {
+  padding-bottom: 0;
+}
+
+.work ul {
+  margin-left: 24px;
+  padding-left: 24px;
+  border-left: 1px solid #96A9C4;
+}
+
+.work ul p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.work ul > li:last-child {
+  padding-bottom: 0;
+}
+
+.work img {
+  display: inline-block;
+  margin: 8px 0;
+}
+
+.footer {
+  background-color: #415165;
+  color: #fff;
+}
+
+.footer .footer-inner {
+  padding-top: 24px;
+  text-align: center;
+}
+
+.footer .footer-inner h2 {
+  color: #fff;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #fff;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.footer .footer-inner h2 span {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.footer .footer-inner h2 {
+  margin-bottom: 32px;
+}
+
+.footer ul > li {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  padding-bottom: 16px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .icon > a {
+  margin-left: 24px;
+}
+
+a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.container:last-child {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */

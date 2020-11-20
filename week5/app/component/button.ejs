@@ -1,0 +1,19 @@
+<div class="c-btn-group">
+  <button type="button" id="back" class="btn btn-secondary c-px-4 c-py-1 bold border-1"><%- secondary %></button>
+  <button type="button" id="action" class="btn btn-primary c-px-4 c-py-1 bold border-1 bg-dark"><%- primary%></a></button>
+</div>
+
+<script>
+  let current= window.location.pathname;
+  $('#back').on("click",function(){
+    window.location.href="index.html";
+  });
+  $('#action').on("click",function(){
+    if(current!=='/assignment-reply.html'){
+      window.location.href="assignment-reply.html";
+    }else{
+      window.location.href="index.html";
+    }
+  });
+
+</script>

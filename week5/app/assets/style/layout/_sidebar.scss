@@ -1,0 +1,50 @@
+// sidebar
+.sidebar{
+  background-color: $bg-color-light;
+  color:$text-color-primary;
+  padding:40px 80px 32px 0 ; 
+  min-height: 100vh;
+
+  .text-hide{
+    background-image: url('../images/logo-ANSWER.svg');
+    background-repeat: no-repeat;
+    display: block;
+    height: 40px;
+  }
+  .nav-link{
+    color:$text-color-primary;
+    font-weight: 700;
+    margin-bottom: 26px;
+  }
+  .nav-link .material-icons {
+    color:inherit;
+    margin-right:16px ;
+  }
+  .nav-link, .currentUser{
+    padding-left: 32px;
+  }
+  .currentUser .img-circular{
+    background-image: url('../images/andychen.jpeg');
+    background-size: cover;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+// effect
+.sidebar{
+  .active{
+    color:#2A8356;
+  }
+  .nav-link:hover  {
+    border-left: 4px solid #2A8356;
+    color:#2A8356;
+  }
+  .nav-link{
+    border-left: 4px solid transparent;
+  }
+}
+
+
+
