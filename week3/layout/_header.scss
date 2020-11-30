@@ -32,7 +32,7 @@
   }
   // menu
   .header-menu{
-    @include mobile {
+    @media (max-width:$breakpoint-mobile) {
       width: 100%;
       flex-wrap: wrap;
     }

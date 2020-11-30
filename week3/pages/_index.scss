@@ -102,9 +102,9 @@ section {
     }
   }
   .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    // justify-content: center;
+    // align-items: center;
     height: 100px; // 撐開高度 底下title齊高
     margin-bottom: 40px;
     @include pad {

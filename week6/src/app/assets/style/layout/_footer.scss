@@ -1,0 +1,7 @@
+.footer{
+  &-logo{
+    @include media-breakpoint-down(lg){
+      width: 100%;
+    }
+  }
+}

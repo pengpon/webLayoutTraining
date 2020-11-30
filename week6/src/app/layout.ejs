@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner container d-flex justify-content-between text-secondary">
+      <h1><a href="#" class="text-hide">D'PERFUME</a></h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand position-relative d-lg-none text-sm" href="#">
+          <i class="material-icons">shopping_cart</i>
+          <span class="badge badge-pill badge-primary  position-absolute">3</span>
+          <span class="sr-only">cart items</span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <ul class="navbar-nav d-none d-lg-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> 
+                <i class="material-icons ">store</i> Product
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="material-icons">person</i> Log in
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="material-icons">favorite</i> Wishlist
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="material-icons">shopping_cart</i>Cart(3)
+              </a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+    
+    <div class="collapse navbar-collapse text-center position-fixed w-100 text-white" id="navbarNav">
+        <ul class="navbar-nav bg-secondary ">
+          <li class="nav-item border-bottom">
+            <a class="nav-link" href="#">Product</a>
+          </li>
+          <li class="nav-item border-bottom">
+            <a class="nav-link" href="#">Wishlist</a>
+          </li>
+          <li class="nav-item border-bottom">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item border-bottom">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item border-bottom">
+            <a class="nav-link" href="#">Log in</a>
+          </li>
+        </ul>
+    </div>
+  </header>
+
+  <%- contents %>
+
+  <footer class="footer bg-primary">
+    <div class="footer-inner container d-flex justify-content-between text-white">
+      <div class="footer-logo d-flex justify-content-between align-items-center">
+         <a href="#"><img src="./assets/images/d’Perfumewhite.png" alt="logo"></a> 
+        <span>© 2020. All Rights Reserved.</span>
+      </div>
+      <ul class="nav d-none d-lg-flex">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
