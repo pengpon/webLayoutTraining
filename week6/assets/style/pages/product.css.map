@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/product.scss"],"names":[],"mappings":"AAAA;EACE,iBAAiB,EAAA;EADnB;IAGI,oBAAoB,EAAA;;AAIxB;EAEI,0BAA0B,EAAA","file":"product.css","sourcesContent":[".product {\r\n  padding-top: 80px;\r\n  li {\r\n    padding-bottom: 58px;\r\n  }\r\n}\r\n\r\n.pagination {\r\n  .active {\r\n    text-decoration: underline;\r\n  }\r\n}\r\n"]}

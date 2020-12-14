@@ -70,3 +70,10 @@
 // Reset
 
 .text-reset { color: inherit !important; }
+
+// custom font size
+@for $i from 1 through 11{
+  .size-#{$i}{
+    font-size: $i* 4px;
+  }
+} 
