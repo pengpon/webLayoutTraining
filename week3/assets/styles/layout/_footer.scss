@@ -1,11 +1,8 @@
 // footer
-footer {
-  color: #fff;
-  padding: 36px 30px 30px;
-  @include mobile {
+.footer {
+  @include pad {
     padding: 20px 10px;
   }
-  background-color: $bg-secondary;
 
   a {
     color: #fff;
@@ -13,7 +10,7 @@ footer {
     display: block;
   }
   .container {
-    @include mobile {
+    @include pad {
       padding: 20px 10px;
       background-image: url('../images/logo.png');
       background-repeat: no-repeat;
@@ -22,18 +19,18 @@ footer {
     }
   }
 
-  .footer-main {
+  &-main {
     border-bottom: 1px solid #fff;
     .footer-main-item {
       padding-bottom: 20px;
-      @include pad {
+      @include desktop {
         padding-bottom: 24px;
       }
     }
-    .footer-main-item .menu {
+    &-item .menu {
       li {
         margin-left: 48px;
-        @include pad {
+        @include desktop {
           margin-left: 40px;
         }
       }
@@ -41,11 +38,11 @@ footer {
         margin-left: 0px;
       }
       margin-bottom: 36px;
-      @include pad {
+      @include desktop {
         margin-bottom: 26px;
       }
 
-      @include mobile {
+      @include pad {
         display: none;
       }
     }
@@ -53,40 +50,39 @@ footer {
     .footer-main-item .mail {
       font-size: $h3-font-size;
       margin-bottom: 20px;
-      @include pad {
+      @include desktop {
         font-size: $h6-font-size;
       }
-      @include mobile {
+      @include pad {
         font-size: $h7-font-size;
       }
       .contact-icon {
         width: 48px;
-        @include pad {
+        @include desktop {
           width: 32px;
         }
-        @include mobile {
+        @include pad {
           width: 20px;
         }
       }
       p {
         margin-left: 12px;
-        @include mobile {
+        @include pad {
           margin-left: 5px;
         }
       }
     }
     .footer-main-item img {
       height: auto;
-      @include pad {
-      }
     }
     .media {
       a {
         margin-left: 32px;
         max-width: 48px;
         min-width: 24px;
-        @include pad {
+        @include desktop {
           margin-left: 24px;
+          max-width: 24px;
         }
       }
       li:first-child {
@@ -98,9 +94,10 @@ footer {
   }
   .footer-sub {
     padding-top: 24px;
-    @include mobile {
+    @include pad {
       padding-top: 18px;
       flex-direction: column;
+      align-items: start;
     }
     p {
       margin-left: 38px;
@@ -108,7 +105,7 @@ footer {
     a {
       font-size: 14px;
     }
-    @include pad {
+    @include desktop {
       .sub-item-logo {
         display: none;
       }
@@ -116,7 +113,7 @@ footer {
         margin-left: 0;
       }
     }
-    @include mobile {
+    @include pad {
       .sub-item p {
         margin-bottom: 7px;
       }
@@ -129,12 +126,12 @@ footer {
       a {
         display: block;
       }
-      @include mobile {
+      @include pad {
         margin-left: 0;
         margin-bottom: 8px;
       }
     }
-    @include mobile {
+    @include pad {
       flex-direction: column;
     }
   }

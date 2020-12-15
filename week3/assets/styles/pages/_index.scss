@@ -19,13 +19,13 @@ section {
 // content
 .banner {
   height: 840px;
-  background-image: url('./images/banner.png');
+  background-image: url('../images/banner.png');
   background-repeat: no-repeat;
-  background-size: cover; //背景圖放大佔滿整個容器
+  background-size: cover; // 背景圖放大佔滿整個容器
   background-position: center;
   @include mobile {
     height: 394px;
-    background-image: url('./images/banner-sm.png');
+    background-image: url('../images/banner-sm.png');
   }
   .banner-inner {
     height: 100%; // 撐開高度
@@ -54,7 +54,6 @@ section {
 }
 
 .keypoint {
-  background-color: $bg-primary;
   .h2 {
     color: $text-primary-dark;
   }
@@ -114,12 +113,7 @@ section {
 }
 
 .classic {
-  .h2 {
-    color: $text-primary-dark;
-  }
-  .classic-item li .h3 {
-    font-size: 48px;
-    color: $text-primary-light;
+  &-item li a {
     margin-left: 30px;
     @media (max-width: $breakpoint-desktop-l) {
       font-size: 36px;
@@ -130,12 +124,14 @@ section {
     @include mobile {
       color: #fff;
     }
-    h3 {
-      margin-left: 8px;
-    }
   }
-  .classic-item li .h3:nth-child(2) {
+  &-item li:nth-child(2) a {
+    margin-left: 0;
     margin-right: 30px;
+    @media (max-width: $breakpoint-desktop-l) {
+      margin-right: 0;
+      margin-left: 30px;
+    }
   }
 
   .classic-item li {
@@ -173,27 +169,35 @@ section {
       left: 0;
       right: 0;
       margin: auto;
-      .icon-diamond {
-        content: url('./images/icon-diamond-white.svg');
-      }
-      .icon-sun {
-        content: url('./images/icon-sun-white.svg');
-      }
+      .icon-diamond,
+      .icon-sun,
       .icon-thunder {
-        content: url('./images/icon-thunder-white.svg');
+        display: none;
       }
+      // .icon-diamond {
+      //   content: url('./images/icon-diamond-white.svg');
+      // }
+      // .icon-sun {
+      //   content: url('./images/icon-sun-white.svg');
+      // }
+      // .icon-thunder {
+      //   content: url('./images/icon-thunder-white.svg');
+      // }
+    }
+  }
+  .icon-mobile {
+    display: none;
+    @media (max-width: $breakpoint-mobile-l) {
+      display: block;
     }
   }
 }
 
 .crossover {
-  background-image: url('./images/bg.png');
+  background-image: url('../images/bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  .h2 {
-    color: #fff;
-  }
   .crossover-item {
     padding: 0 15px;
     li {
@@ -201,8 +205,6 @@ section {
       position: relative;
       margin-left: 30px;
       .h3 {
-        color: $text-primary-light;
-        font-size: 72px;
         position: absolute;
         background-color: rgba(255, 255, 255, 0.5);
         left: 0;
@@ -214,10 +216,10 @@ section {
           font-size: 32px;
         }
       }
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+      // img {
+      //   max-width: 100%;
+      //   height: auto;
+      // }
     }
     li:first-child {
       margin-left: 0px;
@@ -242,8 +244,8 @@ section {
     color: $text-primary-dark;
   }
   .recommend-item li {
-    width: 25%;
-    margin-left: 30px;
+    width: 23%;
+    // margin-left: 30px;
     border: 1px solid #dee2e6;
     img {
       max-width: 100%;
@@ -281,10 +283,11 @@ section {
       .sub-p,
       img {
         margin-bottom: 16px;
+        width: 100%;
       }
       flex-wrap: wrap;
       li {
-        margin: 0;
+        margin-top: 28px;
         width: 49%;
       }
     }
@@ -297,9 +300,19 @@ section {
 }
 
 .contact {
-  background-color: $bg-primary;
   .contact-inner {
-    max-width: 730px;
+    width: 66%;
+    margin: 0 auto;
+  }
+
+  .form-group label {
+    display: inline-block;
+    width: 100%;
+  }
+  .form-group input,
+  textarea {
+    display: block;
+    width: 100%;
   }
   .contact-text-remind {
     font-size: $h6-font-size;
@@ -328,7 +341,7 @@ section {
         margin-bottom: 2px;
       }
     }
-    input,
+    .form-group input,
     textarea {
       padding: 14px 16px;
       background-color: rgba(0, 0, 0, 0);
@@ -343,12 +356,18 @@ section {
     }
     .check {
       margin-bottom: 42px;
+      input[type='checkbox'] {
+        display: inline;
+    
+      }
     }
+
     .btn-submit {
+      text-align: center;
       input[type='submit'] {
         font-size: $h7-font-size;
         width: 350px;
-        background-color: $bg-secondary;
+        background-color: $bg-primary;
         color: #fff;
         border: none;
         padding: 16px 0;

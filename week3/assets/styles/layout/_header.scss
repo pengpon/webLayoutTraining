@@ -1,28 +1,30 @@
 .header {
-  background-color: $bg-secondary;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 88px;
+  padding-right: 56px;
+  @include pad {
+    padding-left: 39px;
+    padding-right: 19px;
+  }
   @include mobile {
     padding: 0;
+    flex-direction: column;
   }
-  .header-inner{
-    @include mobile {
-      flex-direction: column;
-    }
-  }
-  .logo {
+
+  &-logo {
     @include mobile {
       height: 50px;
       margin: 10px 0;
     }
     a {
-      background-image: url('./images/logo.png');
+      background-image: url('../images/logo.png');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      display: block;
       width: 80px;
       height: 49px;
-      @media (max-width:$breakpoint-mobile-m){
+      @media (max-width: $breakpoint-mobile-m) {
         width: 60px;
       }
       @include mobile {
@@ -31,14 +33,21 @@
     }
   }
   // menu
-  .header-menu{
-    @media (max-width:$breakpoint-mobile) {
+  &-menu {
+    @media (max-width: $breakpoint-mobile) {
       width: 100%;
       flex-wrap: wrap;
     }
   }
   .header-menu li {
-    margin-left: 64px;
+    a {
+      padding-left: 32px;
+      padding-right: 32px;
+      @include desktop {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
     @include mobile {
       text-align: center;
       width: 50%;
@@ -46,21 +55,18 @@
       border: 1px solid #fff;
     }
     a {
-      font-size: $h6-font-size; // 20px
-      text-decoration: none;
-      color: #fff;
-      display: block;
-      border-bottom: 2px solid rgba(0,0,0,0);
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+
       @include mobile {
         padding: 8px 0;
-        border:none;
+        border: none;
       }
     }
     a:hover {
       border-bottom: 2px solid #fff;
-      @include mobile{
-        border:none;
-        color:$text-primary-light;
+      @include mobile {
+        border: none;
+        color: $text-primary-light;
         background-color: #fff;
       }
     }

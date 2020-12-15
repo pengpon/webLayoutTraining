@@ -17,6 +17,12 @@ img{
   height: auto;
 }
 
+a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 h2,.h2{
   font-size: $h2-font-size;
   margin-bottom:60px ;
@@ -36,7 +42,8 @@ h2,.h2{
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  @include pad{
+
+  @include pad {
     max-width: 690px;
   }
   @include mobile{
