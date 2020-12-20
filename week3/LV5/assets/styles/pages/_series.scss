@@ -1,0 +1,43 @@
+.pageseries {
+  @media (max-width:992px){
+    &-title{
+      font-size: 32px;
+    }
+    &-subtitle{
+      font-size: 24px;
+    }
+
+  }
+  @media (max-width:414px){
+    &-title{
+      font-size: 20px;
+    }
+    &-subtitle{
+      font-size: 16px;
+    }
+
+
+  }
+}
+
+.sun{
+  li{
+    width: 30%;
+  }
+}
+.sun{
+  @media (max-width:992px){
+   li{
+     width: 48%;
+   }
+    .list-info{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @media (max-width:568px){
+    li{
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+// 共用設定
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+ font-family: $font-family-base;
+ font-size: $font-size-base;
+ line-height: $line-height-base; 
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+input, textarea{
+  display: block;
+  width: 100%;
+  background:transparent;
+  border: 1px solid #000;
+  padding: 14px 16px;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+
+  @include pad {
+    max-width: 690px;
+  }
+  @include mobile{
+    max-width: 345px;
+  }
+}
+
+
+

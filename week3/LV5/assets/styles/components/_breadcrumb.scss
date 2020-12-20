@@ -1,0 +1,14 @@
+.breadcrumb {
+  li:nth-child(1) a::before{
+    content: '';
+  }
+  li a::before {
+    display: inline-block;
+    content: '/';
+    
+  }
+  .current{
+    color:$text-primary-light;
+  }
+
+}

@@ -1,0 +1,22 @@
+.post-nav {
+  padding: 12px 0 14px;
+  li:hover{
+   font-style: italic;
+  }
+
+  @media (max-width: 992px) {
+    li {
+      margin-left: 32px;
+    }
+    li:nth-child(1) {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    font-size: 16px;
+    li {
+      margin-left: 24px;
+    }
+  }
+  
+}

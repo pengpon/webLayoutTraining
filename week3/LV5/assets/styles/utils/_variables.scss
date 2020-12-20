@@ -1,0 +1,35 @@
+// font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+$font-family-base: 'Noto Sans', 'Segoe UI', 'Microsoft JhengHei',
+  'Helvetica Neue', Arial, sans-serif;
+
+
+// color
+$text-primary-dark: #650300;
+$text-primary-light: #aa0601;
+$text-secondary-dark: #212529;
+$text-secondary-light: #707070;
+
+$bg-primary: #aa0601;
+$bg-secondary: #FBF2F2;
+
+
+
+// size
+$font-size-base: 1rem; // 16px
+
+// height
+$line-height-base:1.5;
+
+// breakpoint 
+$breakpoint-desktop-l:1200px;
+$breakpoint-desktop:992px;
+$breakpoint-pad:768px;
+$breakpoint-mobile:767px;
+$breakpoint-mobile-l:667px;
+$breakpoint-mobile-m:568px;
+$breakpoint-mobile-s:414px;
+$breakpoint-mobile-xs:375px;
+
+// spacer
+$spacers:8px;

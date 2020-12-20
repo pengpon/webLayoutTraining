@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store_detail</title>
+    <link rel="stylesheet" href="./assets/styles/all.css" />
+  </head>
+  <body>
+    <header class="bg-primary ">
+      <div class="container header-inner d-flex justify-content-between align-items-center">
+        <h1><a href="index.html" class="header-logo hide-text">眼鏡</a></h1>
+      <ul class="text-white text-xl d-flex">
+        <li><a href="series_optical.html">系列鏡框</a></li>
+        <li><a href="store.html" class="ml-sm-0 ml-md-5 ml-8">門市據點</a></li>
+        <li><a href="post.html" class="ml-sm-0 ml-md-5 ml-8">部落格</a></li>
+        <li><a href="question.html" class="ml-sm-0 ml-md-5 ml-8">常見問題</a></li>
+      </ul>
+      </div>
+      
+    </header>
+
+    <section class="text-banner px-md-5 px-sm-2">
+      <div class="container d-flex align-items-end h-100">
+        <h2 class="text-4xl text-tc font-bold">
+          門市據點
+          <img src="./assets/images/icon-location.svg" alt="location" class="d-inline-block" />
+        </h2>
+      </div>
+    </section>
+
+    <section class="px-md-5 px-sm-2">
+      <div class="container">
+        <div class="select mb-4">
+          <label class="text-tc" for="location">選擇地區</label>
+          <select name="location" id="location">
+            <option value="tp">台北市</option>
+            <option value="ty">桃園市</option>
+            <option value="tc">台中市</option>
+            <option value="kh">高雄市</option>
+          </select>
+        </div>
+
+        <div class="store-detail d-flex">
+          <div class=" card">
+            <div class="card-img">
+              <img src="./assets/images/locate1.jpeg" alt="locate1" />
+            </div>
+            
+            <div class="card-content">
+              <h3 class="card-title text-1_5xl border-1">台北中山旗艦店</h3>
+              <div class="card-body border-1">
+                <p class="mb-1">
+                  <img class="d-inline mr-1" src="./assets/images/icon-phone-black.svg" alt="tel" /> 電話：(02)000-1234
+                </p>
+                <p class="mb-1">
+                  <img class="d-inline mr-1" src="./assets/images/icon-clock-black.svg" alt="time" />
+                  營業時間：10:00-21:00
+                </p>
+                <p class="mb-1">
+                  <img
+                    class="d-inline mr-1"
+                    src="./assets/images/icon-map.svg"
+                    alt="locate"
+                  />地址：台北市中山區南京東路25巷2-1號
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="map ml-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4655215369216!2d121.53571001500654!3d25.05220628396382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf93d4d97b%3A0xa1e26471ae5697b8!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1608293817845!5m2!1szh-TW!2stw"
+              width="600"
+              height="100%"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary text-white pt-6 pb-5 ">
+      <div class="container ">
+        <div class="footer-menu mb-4 d-flex justify-content-between align-items-center">
+          <ul class="text-tc d-flex">
+            <li><a href="index.html">首頁</a></li>
+            <li class="ml-6"><a href="series_optical.html">系列鏡框</a></li>
+            <li class="ml-6"><a href="store.html">門市據點</a></li>
+            <li class="ml-6"><a href="post.html">部落格</a></li>
+            <li class="ml-6"><a href="question.html">常見問題</a></li>
+          </ul>
+
+          <ul class="d-flex">
+            <li>
+              <a href="#"><img src="./assets/images/icon-fb.svg" alt="facebook" /></a>
+            </li>
+            <li class="ml-4">
+              <a href="#"><img src="./assets/images/icon-ig.svg" alt="instagram" /></a>
+            </li>
+            <li class="ml-4">
+              <a href="#"><img src="./assets/images/icon-line.svg" alt="line" /></a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer-contact text-2_25xl">
+          <li>
+            <a href="#"><img src="./assets/images/icon-phone.svg" alt="phone" class="d-inline-block" />0800-000-000</a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/icon-mail.svg" alt="mail" class="d-inline-block" />glasses@business.com</a
+            >
+          </li>
+        </ul>
+
+        <div class="footer-info d-flex justify-content-between align-items-center pt-3">
+          <div class="footer-copyright d-flex align-items-center">
+            <img src="./assets/images/logo.png" alt="logo" />
+            <p>Copyright © 2020 Glasses.All rights reserved.</p>
+          </div>
+          <ul class="footer-policy text-sm text-tc d-flex">
+            <li><a href="#">隱私權政策</a></li>
+            <li><a href="#">服務條款</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

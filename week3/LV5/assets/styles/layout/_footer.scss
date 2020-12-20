@@ -1,0 +1,31 @@
+// footer
+.footer {
+  @include pad {
+    padding: 20px 10px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  .container {
+    @include pad {
+      padding: 20px 10px;
+      background-image: url('../images/logo.png');
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: 46px;
+    }
+  }
+}
+
+// a hover effect
+.footer-menu a, .footer-contact a ,.footer-policy a  {
+  border-bottom:2px solid rgba(0,0,0,0);
+  display: inline-block;
+}
+.footer-menu a:hover, .footer-contact a:hover ,.footer-policy a:hover{
+  border-bottom: 2px solid #fff;
+}
+

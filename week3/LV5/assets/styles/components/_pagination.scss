@@ -1,0 +1,31 @@
+.pagination{
+  margin-bottom: 156px;
+  font-size: 18px;
+  li{
+    border: 1px solid #555555;
+    padding: 10px 12px 12px;
+  }
+  .active,li:hover{
+    background-color: #000;
+    color: #fff;
+
+  }
+  .prev, .next{
+    font-size: 19px;
+  }
+  .next{
+    background-color: #F2F2F2;
+  }
+
+  @media (max-width:568px){
+    font-size: 11px;
+    li{
+      padding: 8px;
+    }
+    .prev,.next{
+      font-size: 12px;
+    }
+
+  }
+
+}
