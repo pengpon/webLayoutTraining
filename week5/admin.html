@@ -5,62 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Admin</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
-    <!-- jQuery, Popper.js, and Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-      crossorigin="anonymous"
-    ></script>
-
-   
-   <div class="wrap d-flex">
-     <div class="sidebar d-flex flex-column justify-content-between">
+    <div class="wrap d-flex">
+      <div class="sidebar d-flex flex-column justify-content-between">
   <nav class="sidebar-menu nav flex-column">
     <h1 class="h1 c-mb-10 c-pl-8">
       <a href="index.html" class="text-hide">Answer</a>
     </h1>
-    <a href="404.html" class="nav-link d-flex align-items-center"> 
-      <i class="material-icons">insert_chart</i>
-      Dashboard
-    </a>
-    <a href="404.html" class="nav-link d-flex align-items-center"> 
-      <i class="material-icons">forum</i> 
-      Question
-    </a>
-    <a href="index.html" class="nav-link d-flex align-items-center" id="assignment"> 
-      <i class="material-icons">assignment</i> 
-      Assignment
-    </a>
-    <a href="404.html" class="nav-link d-flex align-items-center"> 
-      <i class="material-icons">video_library</i> 
-      Course
-    </a>
-    <a href="admin.html" class="nav-link d-flex align-items-center" id="admin"> 
-      <i class="material-icons">supervisor_account</i>
-      Admin
-    </a>
-    <a href="404.html" class="nav-link d-flex align-items-center"> 
-      <i class="material-icons">settings</i> 
-      Settings
-    </a>
+    <ul class="list-unstyled">
+      <li>
+        <a href="404.html" class="nav-link d-flex align-items-center"> 
+          <i class="material-icons">insert_chart</i>Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="404.html" class="nav-link d-flex align-items-center"> 
+          <i class="material-icons">forum</i> Question
+        </a>
+      </li>
+      <li>
+        <a href="index.html" class="nav-link d-flex align-items-center" id="assignment"> 
+          <i class="material-icons">assignment</i>Assignment
+        </a>
+      </li>
+      <li>
+        <a href="404.html" class="nav-link d-flex align-items-center"> 
+          <i class="material-icons">video_library</i> Course
+        </a>
+      </li>
+      <li>
+        <a href="admin.html" class="nav-link d-flex align-items-center" id="admin"> 
+          <i class="material-icons">supervisor_account</i>Admin
+        </a>
+      </li>
+      <li>
+        <a href="404.html" class="nav-link d-flex align-items-center"> 
+          <i class="material-icons">settings</i> Settings
+        </a>
+      </li>
+    </ul>
+    
+    
+    
+    
+    
+    
   </nav>
 
  <div class="media currentUser">
@@ -81,9 +80,9 @@
   }else{
     $('#assignment').addClass('active');
   }
-</script> 
-     <div class=" d-flex flex-column c-px-4 w-100"> 
-       
+</script>
+      <div class="d-flex flex-column c-px-4 w-100">
+        
 <header class="d-flex justify-content-between">
   
     <div class="d-flex">
@@ -92,7 +91,7 @@
     type="button" 
     class="header-option btn  border-0 dark bg-transparent bold d-flex align-items-center"
     data-toggle="modal" data-target="#newProfileModal">
-    <i class="material-icons primary">add</i>
+   <a href="#"><i class="material-icons primary">add</i></a> 
     Add New Admin
   </button>
 </div>
@@ -100,13 +99,12 @@
 
   
   <div class="header-icon">
-    <i class="material-icons">search</i>
-    <i class="material-icons">notifications_active</i>
+    <a href="#"> <i class="material-icons">search</i></a>
+    <a href="#"> <i class="material-icons">notifications_active</i></a>
+   
+   
   </div>
-</header> 
-
-       
-            <div class=" ">
+</header>  <div class=" ">
   <table class="admin-table table">
   <thead >
     <tr >
@@ -124,8 +122,8 @@
       <td>emir.wicks@mail.com</td>
       <td>Yes</td>
       <td class="text-right">
-        <i class="material-icons"data-toggle="modal" data-target="#viewProfileModal">visibility</i>
-        <i class="material-icons" data-toggle="modal" data-target="#editProfileModal">edit</i>
+        <a href="#"> <i class="material-icons"data-toggle="modal" data-target="#viewProfileModal">visibility</i></a>
+        <a href="#"><i class="material-icons" data-toggle="modal" data-target="#editProfileModal">edit</i></a>
       </td>
     </tr>
 
@@ -135,8 +133,8 @@
       <td>zaina.goldsmith@mail.com</td>
       <td>Yes</td>
       <td class="text-right">
-        <i class="material-icons">visibility</i>
-        <i class="material-icons" >edit</i>
+        <a href="#"> <i class="material-icons"data-toggle="modal" data-target="#viewProfileModal">visibility</i></a>
+        <a href="#"><i class="material-icons" data-toggle="modal" data-target="#editProfileModal">edit</i></a>
       </td>
     </tr>
     <tr>
@@ -145,8 +143,8 @@
       <td>Mahima.Lopez@mail.com</td>
       <td>Yes</td>
       <td class="text-right">
-        <i class="material-icons">visibility</i>
-        <i class="material-icons">edit</i>
+        <a href="#"> <i class="material-icons"data-toggle="modal" data-target="#viewProfileModal">visibility</i></a>
+        <a href="#"><i class="material-icons" data-toggle="modal" data-target="#editProfileModal">edit</i></a>
       </td>
     </tr>
     <tr>
@@ -155,8 +153,8 @@
       <td>Pharrell.Murray@mail.com</td>
       <td>Yes</td>
       <td class="text-right">
-        <i class="material-icons">visibility</i>
-        <i class="material-icons">edit</i>
+        <a href="#"> <i class="material-icons"data-toggle="modal" data-target="#viewProfileModal">visibility</i></a>
+        <a href="#"><i class="material-icons" data-toggle="modal" data-target="#editProfileModal">edit</i></a>
       </td>
     </tr>
     <tr>
@@ -165,8 +163,8 @@
       <td>Annika.Mcbride@mail.com</td>
       <td>Yes</td>
       <td class="text-right">
-        <i class="material-icons">visibility</i>
-        <i class="material-icons">edit</i>
+        <a href="#"> <i class="material-icons"data-toggle="modal" data-target="#viewProfileModal">visibility</i></a>
+        <a href="#"><i class="material-icons" data-toggle="modal" data-target="#editProfileModal">edit</i></a>
       </td>
     </tr>
     <tr>
@@ -175,8 +173,8 @@
       <td>Fatimah.Clark@mail.com</td>
       <td>Yes</td>
       <td class="text-right">
-        <i class="material-icons">visibility</i>
-        <i class="material-icons">edit</i>
+        <a href="#"> <i class="material-icons"data-toggle="modal" data-target="#viewProfileModal">visibility</i></a>
+        <a href="#"><i class="material-icons" data-toggle="modal" data-target="#editProfileModal">edit</i></a>
       </td>
     </tr>
     <tr>
@@ -185,8 +183,8 @@
       <td>Klaudia.Rhodes@mail.com</td>
       <td>Yes</td>
       <td class="text-right">
-        <i class="material-icons">visibility</i>
-        <i class="material-icons">edit</i>
+        <a href="#"> <i class="material-icons"data-toggle="modal" data-target="#viewProfileModal">visibility</i></a>
+        <a href="#"><i class="material-icons" data-toggle="modal" data-target="#editProfileModal">edit</i></a>
       </td>
     </tr>
     <tr>
@@ -195,8 +193,8 @@
       <td>Tillie.Lucero@mail.com</td>
       <td>Yes</td>
       <td class="text-right">
-        <i class="material-icons">visibility</i>
-        <i class="material-icons">edit</i>
+        <a href="#"> <i class="material-icons"data-toggle="modal" data-target="#viewProfileModal">visibility</i></a>
+        <a href="#"><i class="material-icons" data-toggle="modal" data-target="#editProfileModal">edit</i></a>
       </td>
     </tr>
     <tr>
@@ -205,8 +203,8 @@
       <td>Sabrina.Stephenson@mail.com</td>
       <td>Yes</td>
       <td class="text-right">
-        <i class="material-icons">visibility</i>
-        <i class="material-icons">edit</i>
+        <a href="#"> <i class="material-icons"data-toggle="modal" data-target="#viewProfileModal">visibility</i></a>
+        <a href="#"><i class="material-icons" data-toggle="modal" data-target="#editProfileModal">edit</i></a>
       </td>
     </tr>
     <tr>
@@ -215,8 +213,8 @@
       <td>Annie.Smith@mail.com</td>
       <td>Yes</td>
       <td class="text-right">
-        <i class="material-icons">visibility</i>
-        <i class="material-icons">edit</i>
+        <a href="#"> <i class="material-icons"data-toggle="modal" data-target="#viewProfileModal">visibility</i></a>
+        <a href="#"><i class="material-icons" data-toggle="modal" data-target="#editProfileModal">edit</i></a>
       </td>
     </tr>
   </tbody>
@@ -257,13 +255,13 @@
       </button>
 
       <div class="media">
-      <div class="mr-3 admin-profile-img" ></div>
+      <img class="mr-3 admin-profile-img" ></img>
       <div class="media-body">
         <p class="role">#1</p>
         <p class="role">Admin</p>
         <p class="name">Emir Wicks</p>
         <p class="mail text-note">emir.wicks@mail.com</p>
-        <p class="">
+        <div>
           <button
             class="w-100 d-flex justify-content-between btn-collapse"
             type="button"
@@ -276,7 +274,7 @@
             <i class="material-icons primary icon-close" >keyboard_arrow_up</i>
             <i class="material-icons primary icon-open">keyboard_arrow_down</i>
           </button>
-        </p>
+        </div>
         <div class="collapse" id="collapseExample">
           <button type="button" class="btn btn-outline-danger">Deactivate</button>
           <button type="button" class="btn btn-primary">Edit</button>
@@ -309,7 +307,7 @@
       <form>
         <div class="form-group">
           <h6 class="bold text-l">Account</h6>
-          <label for="inputName text-s">Name</label>
+          <label for="inputName" class="text-s">Name</label>
           <input type="text" class="form-control " id="inputName" placeholder="Emir Wicks" />
           <label for="inputEmail text-s">Email</label>
           <input
@@ -343,24 +341,24 @@
         <div class="form-group">
           <h6 class="bold text-l">Custom Access</h6>
           <div class="form-check form-control-lg">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-            <label class="form-check-label" for="defaultCheck1"> Lecture </label>
+            <input class="form-check-input" type="checkbox" value="lecture" id="newLecture" />
+            <label class="form-check-label" for="newLecture"> Lecture </label>
           </div>
           <div class="form-check form-control-lg">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-            <label class="form-check-label" for="defaultCheck2"> Coupon </label>
+            <input class="form-check-input" type="checkbox" value="coupon" id="newCoupon" />
+            <label class="form-check-label" for="newCoupon"> Coupon </label>
           </div>
           <div class="form-check form-control-lg">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-            <label class="form-check-label" for="defaultCheck2"> Message </label>
+            <input class="form-check-input" type="checkbox" value="message" id="newMessage" />
+            <label class="form-check-label" for="newMessage"> Message </label>
           </div>
           <div class="form-check form-control-lg">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-            <label class="form-check-label" for="defaultCheck2"> Setting </label>
+            <input class="form-check-input" type="checkbox" value="setting" id="newSetting" />
+            <label class="form-check-label" for="newSetting"> Setting </label>
           </div>
           <div class="form-check form-control-lg">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-            <label class="form-check-label" for="defaultCheck2"> Task menu </label>
+            <input class="form-check-input" type="checkbox" value="task" id="newTask" />
+            <label class="form-check-label" for="newTask"> Task menu </label>
           </div>
         </div>
       </form>
@@ -417,7 +415,7 @@
               <span class="text-s">2020/4/12</span>
             </div>
 
-            <button type="button" class="btn btn-lg btn-block rounded-0 light bg-none border-light bold text-m c-py-2">
+            <button type="button" class="btn btn-lg btn-block rounded-0 light bg-none border-light bold text-m c-py-2" disabled>
               Send Verification Mail
             </button>
           </div>
@@ -431,24 +429,24 @@
           <div class="form-group">
             <h6 class="bold text-l">Custom Access</h6>
             <div class="form-check form-control-lg">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-              <label class="form-check-label" for="defaultCheck1"> Lecture </label>
+              <input class="form-check-input" type="checkbox" value="lecture" id="editLecture" />
+              <label class="form-check-label" for="editLecture"> Lecture </label>
             </div>
             <div class="form-check form-control-lg">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-              <label class="form-check-label" for="defaultCheck2"> Coupon </label>
+              <input class="form-check-input" type="checkbox" value="coupon" id="editCoupon" />
+              <label class="form-check-label" for="editCoupon"> Coupon </label>
             </div>
             <div class="form-check form-control-lg">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-              <label class="form-check-label" for="defaultCheck2"> Message </label>
+              <input class="form-check-input" type="checkbox" value="message" id="editMessage" />
+              <label class="form-check-label" for="editMessage"> Message </label>
             </div>
             <div class="form-check form-control-lg">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-              <label class="form-check-label" for="defaultCheck2"> Setting </label>
+              <input class="form-check-input" type="checkbox" value="setting" id="editSetting" />
+              <label class="form-check-label" for="editSetting"> Setting </label>
             </div>
             <div class="form-check form-control-lg">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
-              <label class="form-check-label" for="defaultCheck2"> Task menu </label>
+              <input class="form-check-input" type="checkbox" value="task" id="editTask" />
+              <label class="form-check-label" for="editTask"> Task menu </label>
             </div>
           </div>
           <div class="form-group">
@@ -467,10 +465,26 @@
     </div>
   </div>
 </div>
-
-        
-     </div>
-   </div>
+ 
+      </div>
+    </div>
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous">
+    </script>
+    
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
