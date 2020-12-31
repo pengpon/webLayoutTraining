@@ -1,0 +1,36 @@
+/* text */
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @each $size, $value in $font-size {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        .text#{$infix}-#{$size} {
+          @include font-size($value)
+        }
+    }
+  }
+}
+/* font weight*/
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @each $weight, $value in $text-weight {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        .font#{$infix}-#{$weight} {
+          font-weight: $value;
+        }
+    }
+  }
+}
+
+.font-en{
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-hide{
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-center{
+  text-align: center;
+}

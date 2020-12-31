@@ -1,0 +1,13 @@
+
+/* hover effect*/
+.card-shadow:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.filter-gray{
+  filter: brightness(60%);
+}
+.filter-gray:hover{
+  transition: all 0.5s;
+  filter: brightness(100%);
+}

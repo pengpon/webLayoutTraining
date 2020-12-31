@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>寵物服務，盡在 PETPET</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/styles/all.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <div
+        class="container px-0 px-sm-5 px-md-4 d-flex align-items-center justify-content-between justify-content-sm-between"
+      >
+        <h1 class="bg_logo bg-no-repeat bg-center bg-contain"><a class="text-hide" href="index.html">PETPET</a></h1>
+        <button class="navbar-toggler border-0" style="outline: none;" data-toggle="collapse" data-target="#navbarNav" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  d-md-flex justify-content-end" id="navbarNav">
+          <ul class="navbar-nav text-right ">
+            <li class="nav-item ">
+              <a class="nav-link mr-0 mr-sm-10 text-primary" href="#">預約服務</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-0 mr-sm-10 text-primary" href="#">成為寵物保姆</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-0 text-primary" href="#">登入</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="d-lg-flex d-sm-block align-items-center mb-lg-20 mb-md-55 mb-15 position-relative">
+      <img
+        src="./assets/images/index-1.png"
+        alt="logo"
+        class="w-mb-100 w-md-25 w-lg-100 mx-sm-auto mt-0 mt-md-25 mb-mb-3 mb-sm-6 mt-lg-0 mb-lg-0"
+      />
+      <div class="container w-100">
+        <div class="row">
+          <div class="col-lg-11 col-sm-8 offset-sm-2 offset-lg-0">
+            <h2
+              class="text-center text-md-left text-2xl text-md-3xl text-lg-5xl font-bold mb-1 mb-mb-1 mb-sm-2 mb-lg-4 text-center text-md-left"
+            >
+              寵物服務，盡在 PETPET
+            </h2>
+            <h3 class="text-center text-md-left text-lg font-sm-medium font-lg-bold mb-3 mb-sm-5 mb-lg-12">
+              當您的毛孩有需要時，幫您找到最合適的服務者！
+            </h3>
+            <form action="xxxx.php" class="d-flex flex-column flex-lg-row text-lg">
+              <select name="type" id="type" class="mb-3 mb-lg-0 py-3 pl-3">
+                <option selected>品種</option>
+                <option value="corgi">柯基</option>
+                <option value="shiba">柴犬</option>
+                <option value="labrador">拉不拉多</option>
+              </select>
+              <select name="service" id="service" class="flex-grow-1 mb-3 mb-lg-0 py-3 pl-3">
+                <option selected>服務</option>
+                <option value="stay">寄宿</option>
+                <option value="beauty">美容</option>
+                <option value="home">到府保姆</option>
+                <option value="walk">遛狗保姆</option>
+              </select>
+
+              <select name="region" id="region" class="flex-grow-1 mb-3 mb-lg-0 py-3 pl-3">
+                <option selected>地區</option>
+                <option value="notrh">北台灣</option>
+                <option value="central">中台灣</option>
+                <option value="southern">南台灣</option>
+                <option value="eastern">東台灣</option>
+                <option value="outer">外島</option>
+              </select>
+              <input type="submit" value="搜尋" class="btn btn-secondary py-2 px-6" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <a
+        href="#"
+        class="d-none d-md-block text-white position-absolute right-10 -bottom-md-25 bottom-lg-4 bg-secondary rounded-pill"
+        ><i class="material-icons text-4xl align-text-bottom">arrow_drop_down</i></a
+      >
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="text-3xl font-bold mb-1">本月熱門保姆</h2>
+        <p class="text-lg font-medium">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-inner list-unstyled row ">
+            <li class="carousel-item active  col-md-4 mb-3">
+              <div class="card card-shadow ">
+                <div class="card-img-top bg_hot_1 bg-cover bg-no-repeat bg-center-30 position-relative">
+                  <img src="./assets/images/person-1.png" alt="person-1" class="position-relative mx-auto top_img-7" />
+                </div>
+                <div class="card-body mt-mb-20 mt-md-16 mt-lg-13 text-center  px-md-1 px-xl-10">
+                  <h5 class="card-title text-lg-lg font-medium">Jamie</h5>
+                  <p class="card-text text-lg-base font-regular">寄宿、美容、寵物行為訓練</p>
+                  <a href="#" class="btn btn-secondary py-3 px-16">預約</a>
+                </div>
+                <div class="card-review px-mb-18 px-md-2 px-lg-10 mb-7">
+                  <ul class="list-unstyled d-flex justify-content-between text-center">
+                    <li>
+                      <p>獲得評價</p>
+                      <p class="text-2xl font-bold">198 <span class="text-sm font-regular">則</span></p>
+                    </li>
+                    <li>
+                      <p>已完成訂單</p>
+                      <p class="text-2xl font-bold">580 <span class="text-sm font-regular">則</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="carousel-item  col-md-4 mb-3">
+              <div class="card card-shadow ">
+                <div class="card-img-top bg_hot_2 bg-cover bg-no-repeat bg-center-30 position-relative ">
+                <img src="./assets/images/person-2.png" alt="person-1" class="position-relative mx-auto top_img-7" />
+              </div>
+              <div class="card-body mt-mb-20 mt-md-16 mt-lg-13 text-center px-md-2 px-lg-10">
+                <h5 class="card-title text-lg-lg font-medium">Eric</h5>
+                <p class="card-text text-lg-base font-regular">寄宿、美容</p>
+                <a href="#" class="btn btn-secondary py-3 px-16">預約</a>
+              </div>
+              <div class="card-review px-mb-18 px-md-2 px-lg-10 mb-7">
+                <ul class="list-unstyled d-flex justify-content-between text-center">
+                  <li>
+                    <p>獲得評價</p>
+                    <p class="text-2xl font-bold">76 <span class="text-sm font-regular">則</span></p>
+                  </li>
+                  <li>
+                    <p>已完成訂單</p>
+                    <p class="text-2xl font-bold">208 <span class="text-sm font-regular">則</span></p>
+                  </li>
+                </ul>
+              </div>
+              </div>
+              
+            </li>
+            <li class="carousel-item col-md-4 mb-3">
+              <div class="card card-shadow ">
+                <div class="card-img-top bg_hot_3 bg-cover bg-no-repeat bg-center-30 position-relative">
+                <img src="./assets/images/person-3.png" alt="person-1" class="position-relative mx-auto top_img-7" />
+              </div>
+              <div class="card-body mt-mb-20 mt-md-16 mt-lg-13 text-center px-md-2 px-lg-10">
+                <h5 class="card-title text-lg-lg font-medium">Yvonne</h5>
+                <p class="card-text text-lg-base font-regular">美容、寵物行為訓練</p>
+                <a href="#" class="btn btn-secondary py-3 px-16">預約</a>
+              </div>
+              <div class="card-review  px-mb-18 px-md-2 px-lg-10 mb-7">
+                <ul class="list-unstyled d-flex justify-content-between text-center">
+                  <li>
+                    <p>獲得評價</p>
+                    <p class="text-2xl font-bold">52 <span class="text-sm font-regular">則</span></p>
+                  </li>
+                  <li>
+                    <p>已完成訂單</p>
+                    <p class="text-2xl font-bold">196 <span class="text-sm font-regular">則</span></p>
+                  </li>
+                </ul>
+              </div>
+              </div>
+              
+            </li>
+          </ul>
+          <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a> -->
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="text-lg-3xl font-bold mt-10 mt-md-15 mt-lg-20">線上預約</h2>
+        <p class="text-lg-lg font-medium mt-lg-1">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+        <ul class="list-unstyled row no-gutters d-flex">
+          <li class="col-12 col-md-4">
+            <a href="#" class="d-flex justify-content-center align-items-center  h-mb-100 h_custom-33 mr-0 mr-sm-1 mb-1">
+              <img src="./assets/images/index-5.jpeg" alt="stay" class="w-100 h-100 rounded filter-gray" />
+              <h3 class="position-absolute text-white text-xl font-bold">寵物寄宿</h3>
+            </a>
+          </li>
+          <li class="col-12 col-md-3">
+            <a href="#" class="d-flex justify-content-center align-items-center h_custom-33 h-md-100 mr-0 mr-sm-1 mb-1">
+              <img src="./assets/images/index-6.jpeg" alt="beauty" class="w-100 h-100 rounded filter-gray" />
+              <h3 class="position-absolute text-white text-xl font-bold">寵物美容</h3>
+            </a>
+          </li>
+          <li class="col-12 col-md-3 ">
+            <a href="#" class="d-flex justify-content-center align-items-center h_custom-33 h-md-50 mr-1 mb-1">
+              <img src="./assets/images/index-7.jpeg" alt="care" class="w-100 h-100 rounded filter-gray" />
+              <h3 class="position-absolute text-white text-xl font-bold">到府照顧</h3>
+            </a>
+            <a href="#" class="d-flex justify-content-center align-items-center h_custom-33 h-md-50 mb-1 mr-1">
+              <img src="./assets/images/index-8.jpeg" alt="walk" class="w-100 h-100 rounded filter-gray" />
+              <h3 class="position-absolute text-white text-xl font-bold">遛狗保姆</h3>
+            </a>
+          </li>
+          <li class="col-12 col-md-2">
+            <a href="#" class="d-flex justify-content-center align-items-center h_custom-33 h-md-100 mr-1  mb-1">
+              <img src="./assets/images/index-3.jpeg" alt="" class="w-100 h-100 rounded filter-gray" />
+              <h3 class="position-absolute text-white text-xl font-bold">行為訓練</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="text-white bg_total bg-no-repeat bg-cover bg-center pt-15 pt-md-20 pb-md-25">
+      <div class="container">
+        <h2 class="text-5xl font-bold">PETPET目前已有</h2>
+        <ul class="list-unstyled mt-12 mt-md-25 d-flex row">
+          <li class="text-lg-lg font-medium border-left pl-2 pb-lg-25 mb-15 mb-md-0  col-md-3 offset-3 offset-md-0">
+            <strong class="text-6xl font-bold">5278</strong><br />
+            人使用 PETPET
+          </li>
+          <li class="text-lg font-medium border-left pl-2 pb-lg-25  mb-15 mb-md-0 col-md-3 offset-3 offset-md-0">
+            <strong class="text-6xl font-bold">580</strong> <br />人成為寵物保母
+          </li>
+          <li class="text-lg font-medium border-left pl-2 pb-lg-25 mb-15 mb-md-0 col-md-3 offset-3 offset-md-0">
+            <strong class="text-6xl font-bold">10000+</strong><br />
+            已完成服務
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pt-10 pt-md-15 pt-lg-20 pb-15 pb-lg-20">
+      <div class="container">
+        <h2 class="text-3xl font-bold">預約流程</h2>
+        <p class="text-lg font-medium">輕鬆三步驟，立即獲取最佳服務！</p>
+        <ul class="list-unstyled  row">
+          <li class="col-md-4">
+            <h3 class="text-lg">1.查詢想要的服務</h3>
+            <img src="./assets/images/index-10.png" alt="service" class="w-100"/>
+          </li>
+          <li class="col-md-4">
+            <h3 class="text-lg">2.找到合適的保姆</h3>
+            <img src="./assets/images/index-11.png" alt="find" class="w-100" />
+          </li>
+          <li class="col-md-4">
+            <h3 class="text-lg">3.填寫資料完成預約</h3>
+            <img src="./assets/images/index-12.png" alt="booking" class="w-100" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bg-light py-9">
+      <div class="container">
+        <h2 class="text-xl text-md-5xl font-bold mb-lg-1">有任何我們能幫助您的嗎？</h2>
+        <p class="text-base text-md-lg font-medium">輸入電子信箱<br />將有專業人員在線幫您解決所有問題</p>
+        <form action="" class="row no-gutters">
+          <input type="email" placeholder="example@gmail.com" name="email" class="border py-lg-4 px-lg-3 col-6 col-md-4" />
+          <input type="submit" value="送出" class="btn btn-secondary px-lg-16 py-lg-3 col-6 col-md-3 col-lg-2" />
+        </form>
+      </div>
+    </section>
+
+    <footer class="pt-2 pt-md-15 pb-8">
+      <div class="container">
+        <ul class=" list-unstyled row mb-0 mb-md-25">
+          <li class="col-3">
+            <a href="#" class="bg_logo bg-no-repeat bg-center text-hide mb-6">PETPET</a>
+            <ul class="list-unstyled d-none d-md-block">
+              <li class="mb-6"><a href="#">關於我們</a></li>
+              <li class="mb-6"><a href="#">幫助中心</a></li>
+              <li class="mb-6"><a href="#">使用條款</a></li>
+              <li><a href="#">隱私政策</a></li>
+            </ul>
+          </li>
+          <li class="col-3 d-none d-md-block">
+            <h2 class="text-lg font-bold mb-9 pt-4"><a href="#">寵物服務</a></h2>
+            <ul class="list-unstyled">
+              <li class="mb-6"><a href="#">寵物寄宿</a></li>
+              <li class="mb-6"><a href="#">寵物到府保姆</a></li>
+              <li class="mb-6"><a href="#">寵物美容洗澡</a></li>
+              <li><a href="#">寵物行為訓練</a></li>
+            </ul>
+          </li>
+          <li class="col-3 d-none d-md-block">
+            <h2 class="text-lg font-bold mb-9 pt-4"><a href="#">加入我們</a></h2>
+            <ul class="list-unstyled">
+              <li class="mb-6"><a href="#">成為寵物保姆</a></li>
+              <li class="mb-6"><a href="#">加入寵物計程車</a></li>
+              <li class="mb-6"><a href="#">專屬 APP 下載</a></li>
+              <li><a href="#">相關合約條款</a></li>
+            </ul>
+          </li>
+          <li class="col-3 d-none d-md-block">
+            <h2 class="text-lg font-bold mb-9 pt-4"><a href="#">聯繫我們</a></h2>
+            <ul class="list-unstyled">
+              <li><a href="mailto:petpet@petmail.com">petpet@petmail.com</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="tel:+07-123-4567" class="d-none d-md-block"><i class="material-icons">call</i> 07-123-4567</a>
+          <p class="mb-0">Copyright © 2020 PetPet. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>

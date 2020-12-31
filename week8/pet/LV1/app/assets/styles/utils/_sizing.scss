@@ -1,0 +1,29 @@
+/* sizing */
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @each $size, $value in $width-ratio {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        .w#{$infix}-#{$size} {
+          width: $value;
+        }
+    }
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @each $size, $value in $width-ratio {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        .h#{$infix}-#{$size} {
+          height: $value;
+        }
+    }
+  }
+}
+
+/* custom */
+.h_custom-33{
+  @include media-breakpoint-down(sm){
+    height: 132px;
+  }
+}

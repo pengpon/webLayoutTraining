@@ -1,0 +1,43 @@
+.bg-cover {
+  background-size: cover;
+}
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-center-30 {
+  background-position: center 30%;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+// custom
+.bg_logo {
+  background-image: url('../images/logo.svg');
+  width: 121px;
+  height: 55px;
+}
+
+.bg_hot_1{
+  background-image: url('../images/index-2.jpeg');
+}
+.bg_hot_2{
+  background-image: url('../images/index-3.jpeg');
+}
+.bg_hot_3{
+  background-image: url('../images/index-4.jpeg');
+}
+
+.bg_total{
+  background-image: url('../images/index-9.jpeg');
+}
+
+.bg-primary{
+  background-color: #F0AD25;
+}
